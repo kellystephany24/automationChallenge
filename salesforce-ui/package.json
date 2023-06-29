@@ -1,0 +1,25 @@
+{
+  "name": "salesforce",
+  "version": "0.1.0",
+  "description": "Salesforce Automation",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-chrome": "testcafe chrome ./salesforce/test  --skipJsErrors",
+    "test-firefox": "testcafe firefox ./salesforce/test  --skipJsErrors",
+    "test-chrome-login": "testcafe chrome ./salesforce/test/Login.test.js --skipJsErrors",
+    "test-chrome-SearchResultsPage": "testcafe chrome ./salesforce/test/SearchResultsPage.test.js --skipJsErrors",
+    "test-chrome-Accounts": "testcafe chrome ./salesforce/test/AccountsPage.test.js --skipJsErrors",
+    "test-chrome-Contacts": "testcafe chrome ./salesforce/test/ContactsPage.test.js --skipJsErrors" 
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevExpress/testcafe/issues"
+  },
+  "devDependencies": {
+    "testcafe": "*"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
